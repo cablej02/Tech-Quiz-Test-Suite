@@ -67,4 +67,22 @@ describe("<Quiz />", () => {
         cy.contains("h2", "Quiz Completed").should("be.visible");
         cy.contains("Your score: 1/2").should("be.visible");
     });
+
+    it("should reset the quiz when clicking 'Take New Quiz'", () => {
+        cy.contains("button","Start Quiz").click();
+        cy.wait("@getQuestions");
+
+        // click the correct answer for both questions
+        cy.contains("correct").prev("button").click();
+        cy.contains("correct").prev("button").click();
+
+        // check if the quiz completed message is rendered
+        cy.contains("h2", "Quiz Completed").should("be.visible");
+
+        // click the "Take New Quiz" button
+        cy.contains("button","Take New Quiz").click();
+
+        // check if the first question is rendered
+        cy.contains("h2", "Test question 1").should("be.visible");
+    });
 });
