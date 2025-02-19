@@ -4,6 +4,10 @@ A simple quiz game where users can answer randomly fetched questions from the da
 
 ---
 
+### 🎥 [Video Walkthrough](https://drive.google.com/file/d/1gd-hNc3YPvAgkCPH95ggZQpv3GgS6eYR/view?usp=drive_link)
+
+---
+
 ## 📂 Project Setup
 ###  Prerequisites
 - **Node.js**
