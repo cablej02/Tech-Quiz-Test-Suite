@@ -5,7 +5,8 @@ export default defineConfig({
         devServer: {
             framework: "react",
             bundler: "vite",
-        }
+        },
+        supportFile: "cypress/support/component.tsx",
     },
     e2e: {
         setupNodeEvents(on, config) {

@@ -2,7 +2,7 @@
     {
         "question": "Test question 1",
         "answers": [
-        { "text": "1", "isCorrect": false },
+        { "text": "wrong", "isCorrect": false },
         { "text": "correct", "isCorrect": true },
         { "text": "3", "isCorrect": false },
         { "text": "4", "isCorrect": false }
@@ -11,7 +11,7 @@
     {
         "question": "Test question 2",
         "answers": [
-        { "text": "1", "isCorrect": false },
+        { "text": "wrong", "isCorrect": false },
         { "text": "2", "isCorrect": false },
         { "text": "correct", "isCorrect": true },
         { "text": "4", "isCorrect": false }
